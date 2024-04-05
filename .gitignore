@@ -206,7 +206,7 @@ Temporary Items
 
 # data folder
 # results/
-data/workloads/
+# data/workloads/
 
 
 *.h5
@@ -233,7 +233,7 @@ config.pbtxt
 1647201420.zip
 pytorch_model.bin
 models
-data/*
+# data/*
 !data/yamls
 profile-exp*
 *.tar.gz

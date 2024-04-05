@@ -1,0 +1,83 @@
+{"level":"info","ts":1677087716.0163918,"logger":"entrypoint","msg":"Full health checks ","value":false}
+{"level":"info","ts":1677087716.0176957,"logger":"entrypoint.maxprocs","msg":"maxprocs: Updating GOMAXPROCS=4: determined from CPU quota"}
+{"level":"info","ts":1677087716.0179257,"logger":"entrypoint","msg":"Hostname unset will use localhost"}
+{"level":"info","ts":1677087716.0260928,"logger":"entrypoint","msg":"Starting","worker":1}
+{"level":"info","ts":1677087716.026171,"logger":"entrypoint","msg":"Starting","worker":2}
+{"level":"info","ts":1677087716.026182,"logger":"entrypoint","msg":"Starting","worker":3}
+{"level":"info","ts":1677087716.02619,"logger":"entrypoint","msg":"Starting","worker":4}
+{"level":"info","ts":1677087716.0262003,"logger":"entrypoint","msg":"Starting","worker":5}
+{"level":"info","ts":1677087716.0262084,"logger":"entrypoint","msg":"Starting","worker":6}
+{"level":"info","ts":1677087716.0262165,"logger":"entrypoint","msg":"Starting","worker":7}
+{"level":"info","ts":1677087716.0262244,"logger":"entrypoint","msg":"Starting","worker":8}
+{"level":"info","ts":1677087716.0262349,"logger":"entrypoint","msg":"Starting","worker":9}
+{"level":"info","ts":1677087716.0262449,"logger":"entrypoint","msg":"Starting","worker":10}
+{"level":"info","ts":1677087716.027785,"logger":"entrypoint","msg":"Running http server ","port":8000}
+{"level":"info","ts":1677087716.0278227,"logger":"entrypoint","msg":"Creating non-TLS listener","port":8000}
+{"level":"info","ts":1677087716.0280983,"logger":"entrypoint","msg":"Running grpc server ","port":5001}
+{"level":"info","ts":1677087716.0281126,"logger":"entrypoint","msg":"Creating non-TLS listener","port":5001}
+{"level":"info","ts":1677087716.0282261,"logger":"entrypoint","msg":"Setting max message size ","size":2147483647}
+{"level":"info","ts":1677087716.02882,"logger":"entrypoint","msg":"gRPC server started"}
+{"level":"info","ts":1677087716.0301428,"logger":"SeldonRestApi","msg":"Listening","Address":"0.0.0.0:8000"}
+{"level":"info","ts":1677087716.0302289,"logger":"entrypoint","msg":"http server started"}
+{"level":"error","ts":1677087736.3023312,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.117:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"info","ts":1677087745.0054505,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087747.562742,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087747.6443882,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087749.008876,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087749.4298573,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087750.6089334,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087752.106286,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087753.4359376,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087754.2328687,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087755.2532098,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087756.297534,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087756.4488444,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087757.33782,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087758.7546632,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087761.440453,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087761.4572072,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087761.6762042,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087762.216508,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087765.4615262,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087765.670832,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087766.606221,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087766.70586,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087767.1808107,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087769.3557498,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087769.9462016,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087771.74126,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087772.3034902,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087772.5473723,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087773.9888325,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087775.1481051,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087776.238128,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087776.5439146,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087777.5045767,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087779.859658,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087780.2181253,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087781.481957,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087782.3862898,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087782.4024684,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087784.1326048,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087785.0869677,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087786.5266402,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087788.2085938,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087789.1208875,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087789.143831,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087790.018202,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087791.3690634,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087792.696575,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087793.2044427,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087795.646381,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087796.635462,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087797.0283935,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087797.1433966,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087798.1199374,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087798.8161068,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087800.0622025,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087800.9322603,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087801.7502089,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087802.2693725,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087803.1823156,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087805.4526992,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677087806.117773,"logger":"SeldonGrpcClient","msg":"Identity chain"}

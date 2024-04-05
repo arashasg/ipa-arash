@@ -1,0 +1,103 @@
+accuracy_method: sum
+adaptation_interval: 10
+allocation_mode: base
+alpha: 2
+backup_predictor_duration: 2
+backup_predictor_type: max
+baseline_mode: null
+batching_cap: 8
+benchmark_duration: 1
+beta: 1
+central_queue: true
+debug_mode: false
+distrpution_time: 30
+drop_limit: 10
+experiment_info:
+  models_num: 3
+  tasks_num: 7
+from_storage:
+- true
+- true
+gamma: 1.0e-06
+initial_active_model:
+- yolov5n
+- resnet18
+initial_batch:
+- 1
+- 1
+initial_cpu_allocation:
+- 1
+- 1
+initial_replica:
+- 1
+- 1
+latency_margin: 0
+logs_enabled: false
+metadata: gorubi scalibility analysis
+metaseries: 24
+mode: exponential
+model_name:
+- yolo
+- resnet-human
+models_num_range:
+  end: 10
+  start: 1
+monitoring_duration: 2
+nodes:
+- cpu_request: '1'
+  data_type: image
+  max_batch_size: '1'
+  max_batch_time: '1'
+  memory_request: 4Gi
+  model_variants: yolov5n
+  node_name: yolo
+  num_interop_threads: '1'
+  num_threads: '1'
+  replicas: 1
+  use_threading: 'True'
+- cpu_request: '1'
+  data_type: text
+  max_batch_size: '1'
+  max_batch_time: '1'
+  memory_request: 4Gi
+  model_variants: resnet18
+  node_name: resnet-human
+  num_interop_threads: '1'
+  num_threads: '1'
+  replicas: 1
+  use_threading: 'True'
+normalize_accuracy: true
+num_state_limit: 1
+number_tasks: 2
+only_measured_profiles: true
+optimization_method: gurobi
+pipeline_folder_name: video
+pipeline_name: video
+predictor_margin: 0
+predictor_type: lstm
+profiling_load: 20
+profiling_series:
+- 71
+- 72
+reference_latency: p99
+reference_throughput: max
+scaling_cap: 100
+simulation_mode: true
+sla_factor: 5
+task_name:
+- crop
+- classification
+tasks_num_range:
+  end: 10
+  start: 1
+teleport_interval: 0
+teleport_mode: false
+threshold: 4
+throughput_margin: 0
+timeout: 1
+warm_up: false
+workload_config:
+- damping_factor: 8
+  end: '1301360'
+  start: '1301160'
+workload_type: twitter

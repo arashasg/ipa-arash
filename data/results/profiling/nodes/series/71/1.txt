@@ -1,0 +1,319 @@
+{"level":"info","ts":1677036797.2901297,"logger":"entrypoint","msg":"Full health checks ","value":false}
+{"level":"info","ts":1677036797.2910268,"logger":"entrypoint.maxprocs","msg":"maxprocs: Updating GOMAXPROCS=4: determined from CPU quota"}
+{"level":"info","ts":1677036797.2911947,"logger":"entrypoint","msg":"Hostname unset will use localhost"}
+{"level":"info","ts":1677036797.295598,"logger":"entrypoint","msg":"Starting","worker":1}
+{"level":"info","ts":1677036797.295649,"logger":"entrypoint","msg":"Starting","worker":2}
+{"level":"info","ts":1677036797.295656,"logger":"entrypoint","msg":"Starting","worker":3}
+{"level":"info","ts":1677036797.2956607,"logger":"entrypoint","msg":"Starting","worker":4}
+{"level":"info","ts":1677036797.2956653,"logger":"entrypoint","msg":"Starting","worker":5}
+{"level":"info","ts":1677036797.295669,"logger":"entrypoint","msg":"Starting","worker":6}
+{"level":"info","ts":1677036797.2956746,"logger":"entrypoint","msg":"Starting","worker":7}
+{"level":"info","ts":1677036797.2956793,"logger":"entrypoint","msg":"Starting","worker":8}
+{"level":"info","ts":1677036797.295684,"logger":"entrypoint","msg":"Starting","worker":9}
+{"level":"info","ts":1677036797.295692,"logger":"entrypoint","msg":"Starting","worker":10}
+{"level":"info","ts":1677036797.296948,"logger":"entrypoint","msg":"Running http server ","port":8000}
+{"level":"info","ts":1677036797.2969728,"logger":"entrypoint","msg":"Creating non-TLS listener","port":8000}
+{"level":"info","ts":1677036797.2974207,"logger":"entrypoint","msg":"Running grpc server ","port":5001}
+{"level":"info","ts":1677036797.2974362,"logger":"entrypoint","msg":"Creating non-TLS listener","port":5001}
+{"level":"info","ts":1677036797.2975583,"logger":"entrypoint","msg":"Setting max message size ","size":2147483647}
+{"level":"info","ts":1677036797.298158,"logger":"entrypoint","msg":"gRPC server started"}
+{"level":"info","ts":1677036797.2995286,"logger":"SeldonRestApi","msg":"Listening","Address":"0.0.0.0:8000"}
+{"level":"info","ts":1677036797.2996182,"logger":"entrypoint","msg":"http server started"}
+{"level":"error","ts":1677036822.6063182,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036827.5982285,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036832.6223016,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036837.6142914,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036842.6062994,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036847.598305,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036852.6223254,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036857.6143174,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036862.6063786,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036867.598302,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036872.6223106,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036877.1662638,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036878.1902306,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036882.6063006,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036887.5982735,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036892.6222928,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036897.6143687,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036902.6062756,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036907.5982807,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036912.6222541,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036917.6142485,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036922.6063018,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"error","ts":1677036927.5983052,"logger":"SeldonRestApi","msg":"Ready check failed","error":"dial tcp 10.152.183.112:9000: connect: connection refused","stacktrace":"net/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.handleCORSRequests.func1\n\t/workspace/api/rest/middlewares.go:64\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.CORSMethodMiddleware.func1.1\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/middleware.go:51\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.xssMiddleware.func1\n\t/workspace/api/rest/middlewares.go:87\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.(*CloudeventHeaderMiddleware).Middleware.func1\n\t/workspace/api/rest/middlewares.go:47\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/seldonio/seldon-core/executor/api/rest.puidHeader.func1\n\t/workspace/api/rest/middlewares.go:79\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2047\ngithub.com/gorilla/mux.(*Router).ServeHTTP\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2879\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1930"}
+{"level":"info","ts":1677036937.1266875,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036938.3530545,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036940.6267552,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036942.520414,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036943.3469236,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036943.401168,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036944.0431895,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036946.0904002,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036946.0940058,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036946.8131244,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036947.967625,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036948.2070243,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036949.611797,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036950.4488852,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036951.7729633,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036952.3640015,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036955.5869222,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036956.1382706,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036957.113738,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036957.8694303,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036959.1465197,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036959.3746405,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036959.5832286,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036960.7981336,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036961.3805141,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036963.3902102,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036964.785385,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036965.3038046,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036965.3732505,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036966.2658942,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677036970.6923501,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071118.766812,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071121.0658882,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071123.0962005,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071123.7208776,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071123.7767696,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071125.3445902,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071125.8882515,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071126.707429,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071128.235358,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071128.3873594,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071130.9102862,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071130.929278,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071131.2288256,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071132.5075772,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071133.1229067,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071135.6167579,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071135.6661222,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071136.7768505,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071136.8749285,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071138.9981902,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071140.2714846,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071140.9706442,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071142.2414165,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071142.8203392,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071142.9126356,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071144.010881,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071144.7808187,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071147.5659385,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071147.8390622,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071148.3131588,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071149.049637,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071151.9612143,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071152.5800898,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071152.669009,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071152.8971548,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071155.831005,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071155.8421504,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071155.9747648,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071157.1543646,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071159.8819983,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071159.9982548,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071161.0653813,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071161.6302664,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071161.8684862,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071163.4428449,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071164.637999,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071166.116948,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071167.6148527,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071168.8120039,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071169.2355754,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071169.8380387,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071170.054771,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071171.7523708,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071172.4271073,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071173.834135,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071174.029844,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071175.2462046,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071176.9079943,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071177.4630828,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071178.2961745,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071178.8821707,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071235.6930563,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071237.421616,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071237.7913349,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071239.1916304,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071240.4112656,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071242.4079607,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071243.2946804,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071244.8244238,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071245.1313536,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071245.6983964,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071247.034001,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071247.8646672,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071249.1484716,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071249.5635655,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071250.3292046,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071251.4061425,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071252.7618647,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071253.6850197,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071254.149556,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071256.1170962,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071256.466051,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071258.5790932,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071258.9806426,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071260.4358757,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071260.6706169,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071261.9104056,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071263.2386389,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071263.6626043,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071264.1999657,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071265.4001534,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071266.1264727,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071267.2522414,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071268.155897,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071270.0090213,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071270.5924025,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071271.8918378,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071272.1564798,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071274.1108475,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071274.9320843,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071275.8089356,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071276.7074857,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071278.3172092,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071278.4593277,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071279.0917373,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071281.1560128,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071281.6244745,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071282.1149817,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071283.4329078,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071284.6431558,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071285.8558965,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071286.3415525,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071287.302371,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071288.4422657,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071289.0689633,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071291.6298852,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071293.0235457,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071293.911944,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071293.9868,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071294.0620217,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071296.0933397,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071296.5851636,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071358.8936424,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071360.1382637,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071362.1616502,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071363.3292918,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071363.652632,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071364.3784428,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071365.6713564,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071366.6600504,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071366.9444337,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071368.982643,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071370.620453,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071370.8331864,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071370.9884987,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071372.0414977,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071373.5446842,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071374.9635637,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071375.1779447,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071377.7729523,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071377.85207,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071379.5884635,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071380.4805188,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071380.5046828,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071381.584519,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071382.3865283,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071383.9530408,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071385.1747658,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071385.7797678,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071387.4077895,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071388.736803,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071388.9408798,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071390.074142,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071392.3248475,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071393.0651639,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071393.3072662,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071393.9052603,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071394.1155066,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071395.5128264,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071397.4988694,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071398.5111227,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071400.6317554,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071401.112087,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071402.3668869,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071402.5041218,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071402.900876,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071404.506225,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071404.5897496,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071406.2455053,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071408.1671557,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071408.7311726,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071408.880704,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071409.7406473,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071410.335513,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071411.0453742,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071412.1548932,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071412.9305627,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071414.0068097,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071415.726702,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071416.6546738,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071417.79961,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071417.9823656,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071419.3454235,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071568.0320575,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071569.4431014,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071571.1737473,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071571.616741,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071573.0744333,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071573.5195167,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071574.9128392,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071575.9733686,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071577.3198698,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071577.3236828,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071578.1316526,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071580.176946,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071582.179428,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071583.4215217,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071584.1129928,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071585.0473046,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071585.2230318,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071586.2114596,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071586.8074806,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071588.2296708,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071589.2407858,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071589.4177623,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071591.2550247,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071592.1124334,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071592.286029,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071593.4910676,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071595.0645883,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071595.6969469,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071596.2085304,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071597.3325012,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071598.2374911,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071600.901415,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071601.4151533,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071602.4382706,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071603.8826518,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071604.3785336,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071604.484352,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071605.8578632,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071606.1282294,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071608.2778091,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071608.7808955,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071609.101694,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071610.9409502,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071611.2395728,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071613.317902,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071614.0171463,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071614.3305223,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071615.2112694,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071617.3770587,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071618.6815603,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071619.4353628,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071619.7000585,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071620.1742449,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071622.3587818,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071622.5273032,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071623.8769612,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071624.2355053,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071626.1008027,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071626.9304197,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071628.0003567,"logger":"SeldonGrpcClient","msg":"Identity chain"}
+{"level":"info","ts":1677071630.7901123,"logger":"SeldonGrpcClient","msg":"Identity chain"}

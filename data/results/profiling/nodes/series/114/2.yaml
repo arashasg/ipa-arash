@@ -1,0 +1,77 @@
+series: 114
+series_meta: 'Experiments with only using quarter of a GPU(2 instances) - third experiment'
+pipeline_name: video
+node_name: yolo
+data_type: image
+timeout: 1
+mode: exponential
+model_variants:
+  # - yolov5n
+  # - yolov5s
+  # - yolov5m
+  # - yolov5l
+  - yolov5x
+max_batch_size:
+  - '1'
+  - '2'
+  - '4'
+  - '8'
+  - '16'
+  - '32'
+  - '64'
+max_batch_time:
+  - '1'
+cpu_request:
+  # - '1'
+  - '5'
+  # - '4'
+  # - '8'
+  # - '16'
+  # - '32'
+gpu_request:
+  # - '1'
+  - '2'
+  # - '4'
+  # - '8'
+  # - '16'
+memory_request:
+  - 4Gi
+replicas:
+  # - 1
+  # - 2
+  # - 4
+  - 8
+  # - 16
+  # - 32
+  # - 64
+workload_type: static
+benchmark_duration: 1
+use_threading: 'True'
+num_interop_threads:
+  - '1'
+num_threads:
+  - '1'
+repetition: 1
+workload_config:
+  loads_to_test:
+  - 1
+  - 5
+  - 10
+  - 30
+  - 40
+  - 80
+  - 160
+  # - 240
+  # - 320
+  load_duration: 60
+# workload_type: twitter
+# workload_config:
+#   - start: '3:5:0'
+#     end: '3:5:1'
+
+distrpution_time: 20
+central_queue: false
+
+# ----------- enable in container logging -------------
+logs_enabled: true
+from_storage: false
