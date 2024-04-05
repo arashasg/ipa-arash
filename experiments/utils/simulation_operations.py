@@ -193,6 +193,7 @@ def generate_simulated_pipeline(
         Pipeline: _description_
     """
     inference_graph = []
+    assert number_tasks == 0
     for i in range(number_tasks):
         profiling_info = load_profile(
             series=profiling_series[i],

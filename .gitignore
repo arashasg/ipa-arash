@@ -205,7 +205,7 @@ Temporary Items
 *.DS_Store
 
 # data folder
-results/
+# results/
 data/workloads/
 
 
