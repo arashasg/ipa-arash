@@ -49,7 +49,7 @@ def load_profile(
     experiment_ids = key_config_df[
         (key_config_df["load"] == load) | (key_config_df["load"] == str(load))
     ]["experiment_id"].tolist()
-    metadata_columns = ["model_variant", "cpu_request", "max_batch_size", "load"]
+    metadata_columns = ["model_variant", "cpu_request", "max_batch_size", "load", "gpu_request"]
     results_columns = [
         f"throughput_{reference_throughput}",
         f"model_latencies_{reference_latency}",
@@ -103,13 +103,13 @@ def make_task_profiles(
         # in the system comment out it in the accuracies file
         if model_variant not in task_accuracies.keys():
             continue
-        model_variant_profiling_info.sort_values(by=["max_batch_size", "cpu_request"])
-        for cpu_request in model_variant_profiling_info["cpu_request"].unique():
-            cpu_request_profiling_info = model_variant_profiling_info[
-                model_variant_profiling_info["cpu_request"] == cpu_request
+        model_variant_profiling_info.sort_values(by=["max_batch_size", "gpu_request"])
+        for gpu_request in model_variant_profiling_info["gpu_request"].unique():
+            gpu_request_profiling_info = model_variant_profiling_info[
+                model_variant_profiling_info["gpu_request"] == gpu_request
             ]
             measured_profiles = []
-            for _, row in cpu_request_profiling_info.iterrows():
+            for _, row in gpu_request_profiling_info.iterrows():
                 # throughput from profiling
                 if only_measured_profiles:
                     measured_profiles.append(
@@ -133,7 +133,7 @@ def make_task_profiles(
             available_model_profiles.append(
                 Model(
                     name=model_variant,
-                    resource_allocation=ResourceAllocation(cpu=cpu_request),
+                    resource_allocation=ResourceAllocation(gpu=gpu_request),
                     measured_profiles=measured_profiles,
                     accuracy=task_accuracies[model_variant],
                     only_measured_profiles=only_measured_profiles,

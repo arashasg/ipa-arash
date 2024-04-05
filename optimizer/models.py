@@ -7,12 +7,13 @@ import math
 
 
 class ResourceAllocation:
-    def __init__(self, cpu: float = 0, gpu: float = 0) -> None:
+    def __init__(self, cpu: float = 0, gpu: float = 0, gpu_chunks: int = 16) -> None:
         # For now only one type CPU/GPU allocation is allowed
         if cpu != 0 and gpu != 0:
             raise ValueError("For now only one of the CPU or GPU allocation is allowed")
         self.cpu = cpu
         self.gpu = gpu
+        self.gpu_chunks = gpu_chunks
 
 
 class Profile:

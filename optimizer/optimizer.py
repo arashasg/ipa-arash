@@ -32,7 +32,7 @@ class Optimizer:
                 variable: search through the cpu allocation as a configuration knob
             complete_profile (bool): whether to log the complete result or not
             only_measured_profiles (bool): only profiled based on the measured latency/throughput
-                profiles and not using regression models
+              profiles and not using regression models
         """
         self.pipeline = pipeline
         self.allocation_mode = allocation_mode
